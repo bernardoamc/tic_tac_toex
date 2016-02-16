@@ -1,4 +1,4 @@
-defmodule TicTacToex.GameRule do
+defmodule TicTacToex.GameLogic do
   def init do
     %{
       board: [:e, :e, :e, :e, :e, :e, :e, :e, :e],
