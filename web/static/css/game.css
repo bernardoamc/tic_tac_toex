@@ -1,0 +1,86 @@
+/*
+ * From Mostafa Samir awesome repo.
+ * https://github.com/Mostafa-Samir/Tic-Tac-Toe-AI
+ */
+.main-container {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.players {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.player td {
+  width: 100%;
+  padding: 10px;
+
+  vertical-align: middle;
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial Black;
+
+  border: 1px solid #000000;
+  border-width: 0px 1px 1px 0px;
+}
+
+.player.x {
+  background-color: #8bf9c1;
+}
+
+.player.o {
+  background-color: #ce506d;
+}
+
+.board {
+    height: 420px;
+    width: 420px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 140px;
+    height: 140px;
+    border: 2px dashed lightskyblue;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    line-height: 140px;
+    text-align: center;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.cell.x {
+  color: green;
+}
+
+.cell.o {
+  color: red;
+}
+
+.info {
+  width: 420px;
+  margin: 0 auto;
+  padding-top: 10px;
+
+  text-align: center;
+  font-family: "Arial Narrow";
+  font-weight: bold;
+  font-size: 40px;
+  cursor: pointer;
+  color: gray;
+}
+
+.info.x {
+  color: green;
+}
+
+.info.o {
+  color: red;
+}

@@ -1,0 +1,25 @@
+<%= content_tag :div, id: "game",
+      data: [player: @player, room_id: @room] do %>
+<% end %>
+
+<div class="players">
+  <table id="player_x" class="player x">
+  </table>
+
+  <table id="player_o" class="player o">
+  </table>
+</div>
+
+<div class="board" id="board">
+    <div class="cell" data-idx="0" data-empty="true"></div>
+    <div class="cell" data-idx="1" data-empty="true"></div>
+    <div class="cell" data-idx="2" data-empty="true"></div>
+    <div class="cell" data-idx="3" data-empty="true"></div>
+    <div class="cell" data-idx="4" data-empty="true"></div>
+    <div class="cell" data-idx="5" data-empty="true"></div>
+    <div class="cell" data-idx="6" data-empty="true"></div>
+    <div class="cell" data-idx="7" data-empty="true"></div>
+    <div class="cell" data-idx="8" data-empty="true"></div>
+</div>
+
+<div id="result" class="info"></div>

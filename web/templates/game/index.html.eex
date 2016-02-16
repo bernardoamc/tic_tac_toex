@@ -1,0 +1,19 @@
+<h2>Let's play Tic Tac Toe?</h2>
+
+<%= form_for @changeset, game_path(@conn, :create), fn f -> %>
+  <div class="form-group">
+    <%= label f, :room_name, class: "control-label" %>
+    <%= text_input f, :room, class: "form-control" %>
+    <%= error_tag f, :room %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :player, class: "control-label" %>
+    <%= text_input f, :player, class: "form-control" %>
+    <%= error_tag f, :player %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Start", class: "btn btn-primary" %>
+  </div>
+<% end %>
