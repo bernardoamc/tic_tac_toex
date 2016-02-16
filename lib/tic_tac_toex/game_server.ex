@@ -11,12 +11,7 @@ defmodule TicTacToex.GameServer do
   end
 
   def add_player(pid, player) do
-    case GenServer.call(pid, {:add_player, player}) do
-      {:ok, new_state} ->
-        {:ok, new_state}
-      {:error, :full_game} ->
-        {:error, :full_game}
-    end
+    GenServer.call(pid, {:add_player, player})
   end
 
   def remove_player(pid, player) do
