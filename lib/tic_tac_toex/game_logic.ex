@@ -66,7 +66,6 @@ defmodule TicTacToex.GameLogic do
     empty_cell  = Enum.at(state[:board], position) == :e
     game_running = state[:status] == :running
 
-    IO.inspect "same_player: #{same_player} / empty_cell: #{empty_cell} / game_running: #{game_running}"
     same_player && empty_cell && game_running
   end
 
