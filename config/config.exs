@@ -6,7 +6,7 @@
 use Mix.Config
 
 # Configures the endpoint
-config :tttx, TicTacToex.Endpoint,
+config :tic_tac_toex, TicTacToex.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "XaMTOEFUlUXXXDYrJxBNDxT7VH8idG9ZaC9UjrXFcbYXfVmv+LL6frYtmEWusLxO",

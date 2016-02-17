@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :tttx, TicTacToex.Endpoint,
+config :tic_tac_toex, TicTacToex.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -15,7 +15,7 @@ config :tttx, TicTacToex.Endpoint,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
 
 # Watch static and templates for browser reloading.
-config :tttx, TicTacToex.Endpoint,
+config :tic_tac_toex, TicTacToex.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
@@ -34,10 +34,10 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :tttx, TicTacToex.Repo,
+config :tic_tac_toex, TicTacToex.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "tttx_dev",
+  database: "tic_tac_toex_dev",
   hostname: "localhost",
   pool_size: 10

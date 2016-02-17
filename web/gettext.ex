@@ -20,5 +20,5 @@ defmodule TicTacToex.Gettext do
 
   See the [Gettext Docs](http://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :tttx
+  use Gettext, otp_app: :tic_tac_toex
 end

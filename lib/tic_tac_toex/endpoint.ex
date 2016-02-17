@@ -1,5 +1,5 @@
 defmodule TicTacToex.Endpoint do
-  use Phoenix.Endpoint, otp_app: :tttx
+  use Phoenix.Endpoint, otp_app: :tic_tac_toex
 
   socket "/socket", TicTacToex.UserSocket
 
@@ -8,7 +8,7 @@ defmodule TicTacToex.Endpoint do
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :tttx, gzip: false,
+    at: "/", from: :tic_tac_toex, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,7 +32,7 @@ defmodule TicTacToex.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_tttx_key",
+    key: "_tic_tac_toex_key",
     signing_salt: "hlIf7Vr7"
 
   plug TicTacToex.Router

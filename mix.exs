@@ -2,7 +2,7 @@ defmodule TicTacToex.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :tttx,
+    [app: :tic_tac_toex,
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
