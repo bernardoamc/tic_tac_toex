@@ -19,7 +19,7 @@ let Game = {
 
       if (isEmpty === "true") {
         roomChannel.push("play_at", payload)
-                  .receive("error", e => console.log(e) )
+                   .receive("error", e => console.log(e) )
       }
     })
 
@@ -33,6 +33,7 @@ let Game = {
 
     roomChannel.on("join_game", (resp) => {
       this.setPlayers(resp)
+      this.resetBoard()
     })
 
     roomChannel.on("player_left", (resp) => {
@@ -48,7 +49,19 @@ let Game = {
     })
 
     roomChannel.join()
-    .receive("error", e => console.log("join failed", e))
+    .receive("error", e => this.fullGame())
+  },
+
+  fullGame() {
+    let board = document.getElementById("board")
+    let base_url = document.lo
+
+    board.innerHTML = `
+    <div class="fullGame">
+      <p>This game is full.</p>
+      <a href="/">Choose another room.</a>
+    </div>
+    `
   },
 
   restartGame(resp) {
@@ -117,13 +130,11 @@ let Game = {
       let player = document.getElementById(`player_${resp.turn}`)
 
       player.innerHTML = this.generatePlayerMarkup(resp.player_attrs)
-      result.innerHTML = `${turn} has won! Restart game?`
-      result.className += ` ${resp.turn}`
+      result.innerHTML = `<a href="javascript:;">${turn} has won! Restart game?</a>`
     }
 
     if (resp.game_status == "draw") {
-      result.innerHTML = "It is a draw! Restart game?"
-      result.className = "info"
+      result.innerHTML = `<a href="javascript:;">It is a draw! Restart game?</a>`
     }
   }
 }

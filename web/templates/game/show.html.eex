@@ -11,15 +11,6 @@
 </div>
 
 <div class="board" id="board">
-    <div class="cell" data-idx="0" data-empty="true"></div>
-    <div class="cell" data-idx="1" data-empty="true"></div>
-    <div class="cell" data-idx="2" data-empty="true"></div>
-    <div class="cell" data-idx="3" data-empty="true"></div>
-    <div class="cell" data-idx="4" data-empty="true"></div>
-    <div class="cell" data-idx="5" data-empty="true"></div>
-    <div class="cell" data-idx="6" data-empty="true"></div>
-    <div class="cell" data-idx="7" data-empty="true"></div>
-    <div class="cell" data-idx="8" data-empty="true"></div>
 </div>
 
 <div id="result" class="info"></div>

@@ -40,6 +40,15 @@
     margin: 0 auto;
 }
 
+.fullGame {
+  width: 100%;
+  padding: 10px;
+
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial Black;
+}
+
 .cell {
     width: 140px;
     height: 140px;
@@ -74,13 +83,6 @@
   font-weight: bold;
   font-size: 40px;
   cursor: pointer;
+  text-decoration: underline;
   color: gray;
-}
-
-.info.x {
-  color: green;
-}
-
-.info.o {
-  color: red;
 }
