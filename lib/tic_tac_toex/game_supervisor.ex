@@ -1,4 +1,8 @@
 defmodule TicTacToex.GameSupervisor do
+  @moduledoc """
+  This module is responsible for supervising all the GameState processes.
+  It is referenced from the GameRegistry module.
+  """
   use Supervisor
 
   def start_link do

@@ -1,4 +1,10 @@
 defmodule TicTacToex.GameLogic do
+  @moduledoc """
+  This module manages the game logic.
+  All the functions besides init/0 expect a game state.
+  A state is a variation of what was created by the init/0 function.
+  """
+
   def init do
     %{
       board: [:e, :e, :e, :e, :e, :e, :e, :e, :e],

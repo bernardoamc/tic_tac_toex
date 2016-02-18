@@ -1,4 +1,9 @@
 defmodule TicTacToex.GameServer do
+  @moduledoc """
+  This module manages a single room.
+  Each room has a state like the one in &GameLogic.init/0 module.
+  """
+
   use GenServer
   alias TicTacToex.GameLogic
 

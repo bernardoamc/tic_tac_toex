@@ -1,4 +1,10 @@
 defmodule TicTacToex.GameRegistry do
+  @moduledoc """
+  This module manages all the rooms.
+  Each room is a GameState process that are supervised by the GameSupervisor
+  module.
+  """
+
   @name __MODULE__
 
   def start_link(opts \\ []) do
